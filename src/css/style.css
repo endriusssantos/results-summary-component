@@ -1,0 +1,186 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .card {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    box-shadow: 5px 15px 43px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.container .card .left {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.container .card .left .title {
+    color: hsl(241, 100%, 89%);
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.container .card .left .circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 23px;
+}
+
+.container .card .left .circle .number {
+    color: hsl(221, 100%, 96%);
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.container .card .left .circle .of-number {
+    color: hsl(241, 100%, 89%);
+}
+
+.container .card .left .result {
+    color: hsl(0, 0%, 100%);
+    font-size: 26px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.container .card .left .description {
+    color: hsl(241, 100%, 89%);
+    max-width: 75%;
+    padding-bottom: 20px;
+}
+
+.container .card .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.container .card .right .title {
+    color: hsl(224, 30%, 27%);
+    text-align: left;
+    padding: 27px 0 10px 27px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.container .card .right .reaction,
+.container .card .right .memory,
+.container .card .right .verbal,
+.container .card .right .visual {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 6px auto;
+    padding: 15px;
+    border-radius: 10px;
+    width: 85%;
+}
+
+.container .card .right .reaction .icon,
+.container .card .right .memory .icon,
+.container .card .right .verbal .icon,
+.container .card .right .visual .icon {
+    margin-right: 10px;
+}
+
+.container .card .right .reaction .name,
+.container .card .right .memory .name,
+.container .card .right .verbal .name,
+.container .card .right .visual .name {
+    margin-right: auto;
+}
+
+.container .card .right .reaction .value,
+.container .card .right .memory .value,
+.container .card .right .verbal .value,
+.container .card .right .visual .value {
+    color: hsl(224, 30%, 27%, 0.5);
+    font-weight: 800;
+}
+
+.container .card .right .reaction strong,
+.container .card .right .memory strong,
+.container .card .right .verbal strong,
+.container .card .right .visual strong {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.container .card .right .reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+}
+
+.container .card .right .reaction .name {
+    color: hsl(0, 100%, 67%);
+    font-weight: 500;
+}
+
+.container .card .right .memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.container .card .right .memory .name {
+    color: hsl(39, 100%, 56%);
+    font-weight: 500;
+}
+
+.container .card .right .verbal {
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.container .card .right .verbal .name {
+    color: hsl(166, 100%, 37%);
+    font-weight: 500;
+}
+
+.container .card .right .visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.container .card .right .visual .name {
+    color: hsl(234, 85%, 45%);
+    font-weight: 500;
+}
+
+.container .card .right .button .btn {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 85%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container .card .right .button .btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
